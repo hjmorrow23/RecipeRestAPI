@@ -7,23 +7,15 @@ const router = express.Router()
 router.post('/', controller.addRecipe)
 
 //Get all Method
-router.get('/getAll', (req, res) => {
-    res.send('Get All API')
-})
+router.get('/', controller.getAllRecipes)
 
 //Get by ID Method
-router.get('/getOne/:id', (req, res) => {
-    res.send('Get by ID API')
-})
+router.get('/:id', controller.getRecipeById)
 
 //Update by ID Method
-router.patch('/update/:id', (req, res) => {
-    res.send('Update by ID API')
-})
+router.put('/:id', controller.updateRecipe)
 
 //Delete by ID Method
-router.delete('/delete/:id', (req, res) => {
-    res.send('Delete by ID API')
-})
+router.delete('/:id', controller.deleteRecipe)
 
 module.exports = router;

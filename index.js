@@ -73,3 +73,5 @@ require('./routes/users/routes')(app);
 app.listen(3000, () => {
     console.log(`Server Started at ${3000}`)
 })
+
+module.exports = app;
