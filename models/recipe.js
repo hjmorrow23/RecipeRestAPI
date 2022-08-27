@@ -19,6 +19,7 @@ const recipeSchema = new mongoose.Schema({
         }
     ],
     tags: [String],
+    image: String,
     // tags: [
     //     {
     //         type: mongoose.Schema.Types.ObjectId,

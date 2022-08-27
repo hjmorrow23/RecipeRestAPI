@@ -5,6 +5,7 @@ exports.addRecipe = async (req, res) => {
         name: req.body.name,
         ingredients: req.body.ingredients,
         steps: req.body.steps,
+        image: req.body.image,
         tags: req.body.tags
     })
     try {
